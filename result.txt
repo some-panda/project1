@@ -1,0 +1,39 @@
+alanna@alanna-VirtualBox:/usr/src/linux-4.20.11$ pwd
+/usr/src/linux-4.20.11
+alanna@alanna-VirtualBox:/usr/src/linux-4.20.11$ ./call_my_queue
+Enqueued: 43
+Enqueued: 27
+Enqueued: 95
+Dequeued: 43
+Dequeued: 27
+Dequeued: 95
+alanna@alanna-VirtualBox:/usr/src/linux-4.20.11$ dmesg
+[  398.077966] [System call] os2024_enqueue(); -----
+[  398.077968] Queue Front --------------------
+[  398.077970] 43
+[  398.077971] Queue Rear ---------------------
+[  398.078234] [System call] os2024_enqueue(); -----
+[  398.078235] Queue Front --------------------
+[  398.078236] 43
+[  398.078237] 27
+[  398.078238] Queue Rear ---------------------
+[  398.078250] [System call] os2024_enqueue(); -----
+[  398.078251] Queue Front --------------------
+[  398.078252] 43
+[  398.078253] 27
+[  398.078253] 95
+[  398.078254] Queue Rear ---------------------
+[  398.078257] [System call] os2024_dequeue(); -----
+[  398.078258] Queue Front --------------------
+[  398.078259] 27
+[  398.078260] 95
+[  398.078260] Queue Rear ---------------------
+[  398.078263] [System call] os2024_dequeue(); -----
+[  398.078264] Queue Front --------------------
+[  398.078265] 95
+[  398.078266] Queue Rear ---------------------
+[  398.078269] [System call] os2024_dequeue(); -----
+[  398.078269] Queue Front --------------------
+[  398.078270] Queue Rear ---------------------
+alanna@alanna-VirtualBox:/usr/src/linux-4.20.11$ pwd
+/usr/src/linux-4.20.11
